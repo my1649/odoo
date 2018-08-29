@@ -28,7 +28,7 @@ class Partner(models.Model):
            return arch
         for city_node in doc.xpath("//field[@name='city']"):
             replacement_xml = """
-            <div>
+            <div class="o_address_city o_field_widget">
                 <field name="country_enforce_cities" invisible="1"/>
                 <field name='city' placeholder="%s" attrs="{'invisible': [('country_enforce_cities', '=', True), ('city_id', '!=', False)], 'readonly': [('type', '=', 'contact'), ('parent_id', '!=', False)]}"/>
                 <field name='city_id' placeholder="%s" attrs="{'invisible': [('country_enforce_cities', '=', False)], 'readonly': [('type', '=', 'contact'), ('parent_id', '!=', False)]}" context="{'default_country_id': country_id}" domain="[('country_id', '=', country_id)]"/>
