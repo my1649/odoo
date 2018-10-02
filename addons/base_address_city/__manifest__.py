@@ -10,7 +10,8 @@
 City Management in Addresses
 ============================
 
-This module allows to enforce users to choose the city of a partner inside a given list instead of a free text field.
+This module allows to enforce users to choose the city of a partner inside a given list instead of a free text field, for
+only the countries with 'Enforce Cities' checked
         """,
     'data': [
         'security/ir.model.access.csv',
